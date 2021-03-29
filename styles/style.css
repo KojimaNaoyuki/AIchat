@@ -72,6 +72,10 @@ body a {
   padding-bottom: 60px;
 }
 
+.margin-M {
+  margin: 60px;
+}
+
 .global-content {
   position: relative;
 }
@@ -121,6 +125,10 @@ body a {
 .global-content .header-inner > h1 {
   color: #cacaca;
   font-size: 34px;
+}
+
+.global-content .header-inner .pc-menu {
+  display: none;
 }
 
 .global-content .mv {
@@ -209,7 +217,7 @@ body a {
 }
 
 .global-content .footer > h3 {
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
   line-height: 50px;
 }
@@ -217,5 +225,40 @@ body a {
 .drawer-menu-icon-burger-open .mobile-menu {
   -webkit-transform: none;
           transform: none;
+}
+
+@media (min-width: 860px) {
+  .global-content .text-title {
+    text-align: left;
+  }
+  .global-content .drawer-menu-icon-burger {
+    display: none;
+  }
+  .global-content .header-inner .pc-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .global-content .header-inner .pc-menu > h4 {
+    margin: 0;
+    padding: 0 20px;
+  }
+  .global-content .header-inner .pc-menu > h4 > a {
+    font-size: 20px;
+    line-height: 44px;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+  }
+  .global-content .header-inner .pc-menu > h4 > a:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px #ad96f1;
+  }
+  .global-content .about__inner {
+    max-width: 960px;
+  }
+  .global-content .use__inner {
+    max-width: 960px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

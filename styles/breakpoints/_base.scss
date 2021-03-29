@@ -22,6 +22,9 @@ body {
 .padding-b {
   padding-bottom: 60px;
 }
+.margin-M {
+  margin: 60px;
+}
 
 .global-content {
   position: relative;
@@ -63,6 +66,10 @@ body {
     & > h1 {
       color: #cacaca;
       font-size: 34px;
+    }
+
+    & .pc-menu {
+      display: none;
     }
   }
 
@@ -155,7 +162,7 @@ body {
     color: #cacaca;
 
     & > h3 {
-      font-size: 20px;
+      font-size: 14px;
       text-align: center;
       line-height: 50px;
     }

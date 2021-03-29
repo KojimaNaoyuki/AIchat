@@ -1,0 +1,44 @@
+.global-content {
+  & .text-title {
+    text-align: left;
+  }
+
+  & .drawer-menu-icon-burger {
+    display: none;
+  }
+
+  & .header-inner {
+    & .pc-menu {
+      display: flex;
+
+      & > h4 {
+        margin: 0;
+        padding: 0 20px;
+
+        & > a {
+          font-size: 20px;
+          line-height: 44px;
+          transition: color 0.4s;
+
+          &:hover {
+            color: white;
+            text-decoration: none;
+            border-bottom: solid 1px #ad96f1;
+          }
+        }
+      }
+    }
+  }
+
+  & .about {
+    &__inner {
+      max-width: 960px;
+    }
+  }
+
+  & .use {
+    &__inner {
+      max-width: 960px;
+    }
+  }
+}

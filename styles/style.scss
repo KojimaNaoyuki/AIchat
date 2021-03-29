@@ -2,3 +2,7 @@
 @import "./modules/btn";
 
 @import "./breakpoints/_base.scss";
+
+@media (min-width: 860px) {
+  @import "./breakpoints/_pc";
+}

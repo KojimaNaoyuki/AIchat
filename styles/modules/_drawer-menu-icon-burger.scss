@@ -1,0 +1,35 @@
+.drawer-menu-icon-burger {
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+
+  & > span {
+    margin-top: 10px;
+    width: 35px;
+    height: 2px;
+    display: block;
+    background-color: #cacaca;
+    transition: transform 0.7s;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
+
+.drawer-menu-icon-burger-open {
+  & .drawer-meny-icon-burger {
+    & > span {
+      &:nth-child(1) {
+        transform: translateY(12px) rotate(-135deg);
+      }
+      &:nth-child(2) {
+        transform: scale(0);
+      }
+      &:nth-child(3) {
+        transform: translateY(-12px) rotate(135deg);
+      }
+    }
+  }
+}

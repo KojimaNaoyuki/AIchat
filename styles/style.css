@@ -1,0 +1,136 @@
+.drawer-menu-icon-burger {
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.drawer-menu-icon-burger > span {
+  margin-top: 10px;
+  width: 35px;
+  height: 2px;
+  display: block;
+  background-color: #cacaca;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+}
+
+.drawer-menu-icon-burger > span:first-child {
+  margin: 0;
+}
+
+.drawer-menu-icon-burger-open .drawer-meny-icon-burger > span:nth-child(1) {
+  -webkit-transform: translateY(12px) rotate(-135deg);
+          transform: translateY(12px) rotate(-135deg);
+}
+
+.drawer-menu-icon-burger-open .drawer-meny-icon-burger > span:nth-child(2) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.drawer-menu-icon-burger-open .drawer-meny-icon-burger > span:nth-child(3) {
+  -webkit-transform: translateY(-12px) rotate(135deg);
+          transform: translateY(-12px) rotate(135deg);
+}
+
+.btn {
+  border-bottom: solid 3px #9e911a;
+  padding: 5px 50px;
+  background-color: #ecd932;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+body {
+  background-color: #dddddd;
+}
+
+body h1,
+body h2,
+body h3 {
+  margin: 0;
+}
+
+.content-width, .global-content .about {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.global-content {
+  position: relative;
+}
+
+.global-content .header-inner {
+  padding: 5px 10px;
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  background-color: transparent;
+}
+
+.global-content .header-inner > h1 {
+  color: #cacaca;
+  font-size: 34px;
+}
+
+.global-content .mv {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+.global-content .mv > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 53%;
+     object-position: 53%;
+  z-index: -100;
+}
+
+.global-content .mv > h2 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #cacaca;
+  opacity: 0.99;
+}
+
+.global-content .mv > button {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 0;
+}
+
+.global-content .text-title {
+  line-height: 60px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.global-content .text {
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */

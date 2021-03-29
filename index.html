@@ -10,6 +10,14 @@
 </head>
 <body>
     <div class="global-content">
+        <div class="mobile-menu">
+            <div class="mobile-menu__inner">
+                <h4><a href="#about-id">AI chatとは？</a></h4>
+                <h4><a href="#use-id">使い方</a></h4>
+                <h4><a href="#">トークを開始</a></h4>
+            </div>
+        </div>
+
         <div class="header-inner">
             <h1>AI chat</h1>
             <button class="drawer-menu-icon-burger">
@@ -25,11 +33,32 @@
             <button class="btn">始める</button>
         </div>
 
-        <div class="about">
-            <h3 class="text-title">AI chatとは？</h3>
-            <p class="text">自然言語処理を用いて作成されたAIとチャットをするプラットフォームです。</p>
-            <p class="text">朝も、昼も、夜も、暇なときいつでも話しかけられます。</p>
+        
+        <div class="about" id="about-id">
+            <img src="./styles/img/back.jpg" alt="">
+            <div class="about__inner">
+                <h3 class="text-title">AI chatとは？</h3>
+                <p class="text">自然言語処理を用いて作成されたAIとチャットをするプラットフォームです。</p>
+                <p class="text">朝も、昼も、夜も、暇なときいつでも話しかけられます。</p>
+            </div>
+        </div>
+
+        <div class="use" id="use-id">
+            <div class="use__inner">
+                <h3 class="text-title">使い方</h3>
+                <p class="text content-center">上記の始めるをクリック</p>
+                <p class="text content-center">↓</p>
+                <p class="text content-center">チャットスタート！</p>
+                <p class="text">チャットした内容は必ず保存されるわけではありません。</p>
+                <p class="text">一定期間後は読み込みができなくなります。</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>&copy;AI chat</h3>
         </div>
     </div>
+
+    <script src="./script/index.js"></script>
 </body>
 </html>

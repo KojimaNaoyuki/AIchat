@@ -174,3 +174,56 @@ body {
     transform: none;
   }
 }
+
+////////////////////////////////////////////////////////////////////////////////////
+
+.main-app {
+  .head-name {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #152c4c;
+
+    & .name {
+      padding: 0 40px;
+      border-radius: 20px;
+      background-color: #185a1b;
+
+      & > h2 {
+        font-size: 18px;
+        line-height: 36px;
+        color: #cacaca;
+      }
+    }
+
+    & > img {
+      width: 24px;
+    }
+  }
+
+  .input {
+    padding: 0;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: right;
+
+    & > form {
+      & > input {
+        margin: 0 5px;
+        padding: 3px 40px;
+        background-color: #152c4c;
+        border: solid 2px #152c4c;
+        border-radius: 8px;
+        color: #cacaca;
+        letter-spacing: 3px;
+        font-weight: bold;
+      }
+      & > textarea {
+        width: 100%;
+        outline: none !important;
+      }
+    }
+  }
+}

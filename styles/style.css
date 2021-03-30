@@ -254,16 +254,55 @@ body a {
   width: 24px;
 }
 
+.main-app .chat-box {
+  height: 82vh;
+  overflow-y: scroll;
+}
+
+.main-app .chat-box .ai-chat {
+  text-align: left;
+}
+
+.main-app .chat-box .ai-chat > p {
+  text-align: left;
+  display: inline-block;
+  margin: 20px 0;
+  margin-left: 20px;
+  padding: 10px;
+  width: 60%;
+  border: solid 1px #0b3a0b;
+  border-radius: 10px;
+  background-color: #86d486;
+  color: black;
+}
+
+.main-app .chat-box .user-chat {
+  text-align: right;
+}
+
+.main-app .chat-box .user-chat > p {
+  text-align: left;
+  display: inline-block;
+  margin: 20px 0;
+  margin-right: 20px;
+  padding: 10px;
+  width: 60%;
+  border: solid 1px #030210;
+  border-radius: 10px;
+  background-color: #3f56bb;
+  color: #cacaca;
+}
+
 .main-app .input {
   padding: 0;
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   right: 0;
   text-align: right;
 }
 
-.main-app .input > form > input {
+.main-app .input > form .send-btn {
   margin: 0 5px;
   padding: 3px 40px;
   background-color: #152c4c;
@@ -274,7 +313,13 @@ body a {
   font-weight: bold;
 }
 
+.main-app .input > form .text-in {
+  width: 100%;
+  height: 60px;
+}
+
 .main-app .input > form > textarea {
+  margin: 0;
   width: 100%;
   outline: none !important;
 }

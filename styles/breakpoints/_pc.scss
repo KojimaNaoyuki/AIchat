@@ -42,3 +42,30 @@
     }
   }
 }
+
+//////////////////////////////////////////////////////////////////////////////////
+
+.main-app {
+  & > img {
+    animation-play-state: paused;
+  }
+
+  & .chat-box {
+    width: 860px;
+    margin: 0 auto;
+    &__inner {
+      max-width: 960px;
+    }
+  }
+
+  & .input {
+    padding: 20px 0;
+
+    & > form {
+      & .text-in {
+        width: 560px;
+        height: 40px;
+      }
+    }
+  }
+}

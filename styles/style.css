@@ -228,6 +228,8 @@ body a {
 }
 
 .main-app .head-name {
+  position: fixed;
+  width: 100%;
   padding: 10px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,6 +241,7 @@ body a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #152c4c;
+  z-index: 100;
 }
 
 .main-app .head-name .name {
@@ -259,6 +262,7 @@ body a {
 }
 
 .main-app .chat-box {
+  padding-top: 60px;
   position: relative;
 }
 
@@ -272,6 +276,10 @@ body a {
      object-fit: cover;
   z-index: -100;
   opacity: 0.15;
+  -webkit-animation: kf-chat-back-img 60s linear;
+          animation: kf-chat-back-img 60s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .main-app .chat-box .ai-chat {
@@ -332,6 +340,33 @@ body a {
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@-webkit-keyframes kf-chat-back-img {
+  0% {
+    object-position: 0%;
+  }
+  50% {
+    object-position: 100%;
+  }
+  100% {
+    object-position: 0%;
+  }
+}
+
+@keyframes kf-chat-back-img {
+  0% {
+    -o-object-position: 0%;
+       object-position: 0%;
+  }
+  50% {
+    -o-object-position: 100%;
+       object-position: 100%;
+  }
+  100% {
+    -o-object-position: 0%;
+       object-position: 0%;
+  }
 }
 
 @media (min-width: 860px) {

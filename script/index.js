@@ -7,5 +7,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('#goto-chat').addEventListener('click', () => {
         window.location = 'chat.html';
-    })
+    });
 });

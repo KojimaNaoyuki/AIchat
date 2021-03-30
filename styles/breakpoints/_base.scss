@@ -179,11 +179,14 @@ body {
 
 .main-app {
   .head-name {
+    position: fixed;
+    width: 100%;
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #152c4c;
+    z-index: 100;
 
     & .name {
       padding: 0 40px;
@@ -204,6 +207,7 @@ body {
   }
 
   .chat-box {
+    padding-top: 60px;
     position: relative;
 
     & > img {
@@ -215,6 +219,8 @@ body {
       object-fit: cover;
       z-index: -100;
       opacity: 0.15;
+      animation: kf-chat-back-img 60s linear;
+      animation-iteration-count: infinite;
     }
 
     & .ai-chat {
@@ -272,5 +278,19 @@ body {
         box-sizing: border-box;
       }
     }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+@keyframes kf-chat-back-img {
+  0% {
+    object-position: 0%;
+  }
+  50% {
+    object-position: 100%;
+  }
+  100% {
+    object-position: 0%;
   }
 }

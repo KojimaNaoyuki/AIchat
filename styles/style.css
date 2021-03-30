@@ -235,6 +235,9 @@ body a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #152c4c;
 }
 
@@ -252,6 +255,7 @@ body a {
 
 .main-app .head-name > img {
   width: 24px;
+  height: 24px;
 }
 
 .main-app .chat-box {

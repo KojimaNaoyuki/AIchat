@@ -1,4 +1,4 @@
-class addEvent {
+class AddEvent {
     constructor() {
         console.log('addEvent.js');
         this.DOM = {};

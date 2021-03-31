@@ -7,13 +7,15 @@ class GetData {
     }
     _getDataFromPHP() {
         //phpからデータを受け取る
-        this.aiChatData = ['ダミーダミーダミー','ダミーダミーダミー','ダミーダミーダミー','ダミーダミーダミー',];
-        this.userChatData = ['ダミーダミーダミー','ダミーダミーダミー','ダミーダミーダミー','ダミーダミーダミー',];
+        this.aiChatData = ['ダミーダミーダミーダミーダミーダミーダミーダミーダミー','ダミーダミーダミー','ダミーダミーダミーダミーダミーダミーダミーダミーダミー','ダミーダミーダミー'];
+        this.userChatData = ['ダミーダミーダミー','ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー','ダミーダミーダミー'];
     }
     outChatDataAi() {
+        //aiChatDataを出力
         return this.aiChatData;
     }
     outChatDataUser() {
+        //userChatDataを出力
         return this.userChatData;
     }
 }

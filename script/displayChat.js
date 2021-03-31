@@ -13,16 +13,18 @@ class DisplayChat {
     }
 
     _createDom() {
-        const aiChat = this._createAiChat();
-        const userChat = this._createUserChat();
+        const aiChat = this._createAiChat(); //ai chatを作成
+        const userChat = this._createUserChat(); //user chatを作成
 
-        aiChat.forEach(Element => {
-            this.DOM.chatBox.appendChild(Element);
-        });
+        //初期状態はaiが発言している状態
+        //userが発言したらすぐにaiが発言するため必ず表示時にはaiがuserより一個多く発言する
+        for(let i = 0; i < aiChat.length; i++) {
+            this.DOM.chatBox.appendChild(aiChat[i]);
 
-        userChat.forEach(Element => {
-            this.DOM.chatBox.appendChild(Element);
-        });
+            if(userChat.length != 0 && i < userChat.length) {
+                this.DOM.chatBox.appendChild(userChat[i]);
+            }
+        }
     }
     _createAiChat() {
         //ai chatを作成
